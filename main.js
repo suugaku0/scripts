@@ -10,6 +10,9 @@ console.log(com)
 if (com=="なし"){
     document.getElementById("my_com").classList.add("hide")
 }
+if (com==null){
+    document.getElementById("my_com").classList.add("hide")
+}
 
 document.getElementById("my_com").addEventListener("click",()=>{
         window.location.href=`https://output.jsbin.com/hituyey?id=${id}&com=${com}&pagecom=自分の委員`
