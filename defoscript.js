@@ -10,24 +10,24 @@ export function request(com){
             console.log(month)
             console.log(data)
             monthly_goal+=data[0][String(month)]
-            console.log(monthly_goal)
+            const maincontent = document.getElementById("thisMonthMain")
+            const monthly_goal_HTML_first=document.getElementById("goal_first")
+            const monthly_goal_HTML_second=document.getElementById("goal_second")
+            monthly_goal_HTML_first.textContent=monthly_goal.split(",")[0]
+            monthly_goal_HTML_second.textContent=monthly_goal.split(",")[1]
             document.getElementById("first").innerText=monthly_goal.split(",")[0]
             document.getElementById("second").innerText=monthly_goal.split(",")[1]
-            const maincontent = document.getElementById("thisMonthMain")
-            const reason=document.createElement("h1")
-            reason.textContent="目標設定理由"
-            maincontent.appendChild(reason)
-            const reasonGoal = document.createElement("p")
-            reasonGoal.innerHTML = data[1][String(month)]
-            console.log(data[1][String(month)])
-            console.log(reasonGoal)
-            maincontent.appendChild(reasonGoal)
-            const contentOWork=document.createElement("h1")
-            contentOWork.textContent="取り組み内容"
-            maincontent.appendChild(contentOWork)
-            const workText=document.createElement("p")
-            workText.innerHTML=data[2][String(month)]
-            maincontent.appendChild(workText)
-        
+            const reason_HTML = document.getElementById("reason")
+            const reason_text = data[1][String(month)]
+            reason_HTML.textContent = reason_text
+            const way_list_HTML= document.getElementById("way_list")
+            const way_HTMLs=document.getElementsByName("way")
+            const way_texts=data[2][String(month)].split(",")
+            for (const way_text of way_texts){
+                let way_HTML=way_HTMLs[0].cloneNode(true);
+                way_HTML.childNodes[0].textContent=way_text
+                way_HTML.classList.toggle("hide")
+                way_list_HTML.appendChild(way_HTML)
+            }    
         })
 }
