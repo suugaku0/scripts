@@ -1,7 +1,7 @@
 
 export function request(com){
     let query = window.location.search
-    let urlParams = UrlSearchParams(query)
+    let urlParams = URLSearchParams(query)
     document.title=urlParams.get("pagecom")
     const GAS_URL_COM="https://script.google.com/macros/s/AKfycby64xJHlP_6lqwIfLac21bOukz5EUpGvlHqTc1mPXx_PsI0EBrA8fT6-BOUzgdkBo_vJg/exec"
     let monthly_goal = ""
