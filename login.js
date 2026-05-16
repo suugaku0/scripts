@@ -13,7 +13,7 @@ document.getElementById("loginBtn").addEventListener("click", ()=>{
     }
     function gas_func(returnData){
         console.log(returnData)
-            const target = "main.html?com=" + encodeURIComponent(comarray[returnData])+"&id="+encodeURIComponent(input);
+            const target = "https://output.jsbin.com/jivowod?com=" + encodeURIComponent(comarray[returnData])+"&id="+encodeURIComponent(input);
             if (input.length < 5) {
                 console.log("id is too short");
             }else{
