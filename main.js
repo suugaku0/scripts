@@ -12,25 +12,25 @@ if (com=="なし"){
 }
 
 document.getElementById("my_com").addEventListener("click",()=>{
-        window.location.href=`mycom.html?id=${id}&com=${com}&pagecom=自分の委員`
+        window.location.href=`https://output.jsbin.com/hituyey?id=${id}&com=${com}&pagecom=自分の委員`
     })
 document.getElementById("gakkyu").addEventListener("click",()=>{
-    window.location.href=`gakkyu.html?id=${id}&com=${com}&pagecom=学級委員`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=学級委員`
 })
 document.getElementById("seikatu").addEventListener("click",()=>{
-    window.location.href=`seikatu.html?id=${id}&com=${com}&pagecom=生活委員`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=生活委員`
 })
 document.getElementById("tosho").addEventListener("click",()=>{
-    window.location.href=`tosho.html?id=${id}&com=${com}&pagecom=図書委員`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=図書委員`
 })
 document.getElementById("bunka").addEventListener("click",()=>{
-    window.location.href=`bunka.html?id=${id}&com=${com}&pagecom=`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=`
 })
 document.getElementById("kyuushoku").addEventListener("click",()=>{
-    window.location.href=`kyuushoku.html?id=${id}&com=${com}`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}`
 })
 document.getElementById("hobi").addEventListener("click",()=>{
-    window.location.href=`hobi.html?id=${id}&com=${com}`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}`
 })
 const modal=document.getElementById("ask-modal")
 document.getElementById("ask").addEventListener("click",()=>{
