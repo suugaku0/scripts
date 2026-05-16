@@ -8,9 +8,9 @@ export function request(com){
     fetch(`${GAS_URL_COM}?com=${com}`)
         .then(response=>response.json())
         .then(data=>{
+            console.log(data)
             const month=Object.keys(data[4]).find(key=>data[4][key]===true)
             console.log(month)
-            console.log(data)
             monthly_goal+=data[0][String(month)]
             const maincontent = document.getElementById("thisMonthMain")
             const monthly_goal_HTML_first=document.getElementById("goal_first")
