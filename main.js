@@ -24,13 +24,13 @@ document.getElementById("tosho").addEventListener("click",()=>{
     window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=図書委員`
 })
 document.getElementById("bunka").addEventListener("click",()=>{
-    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=文化委員`
 })
 document.getElementById("kyuushoku").addEventListener("click",()=>{
-    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=給食委員`
 })
 document.getElementById("hobi").addEventListener("click",()=>{
-    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}`
+    window.location.href=`https://output.jsbin.com/nijeyas?id=${id}&com=${com}&pagecom=保健美化委員`
 })
 const modal=document.getElementById("ask-modal")
 document.getElementById("ask").addEventListener("click",()=>{
